@@ -97,7 +97,7 @@ async function onModalSubmit(interaction) {
 		title: 'Ticket opened',
 		color: 'good',
 		fields: [
-			{ name: 'Ticket', value: `#${number} (${channel})`, inline: true },
+			{ name: 'Ticket', value: `#${number} (${channel} · ${channel.name})`, inline: true },
 			{ name: 'User', value: `${user} (${user.id})`, inline: true },
 			{ name: 'Reason', value: reason.slice(0, 1024) },
 		],
@@ -136,8 +136,8 @@ async function onCloseConfirm(interaction) {
 	const lines = messages.map((m) => {
 		const time = new Date(m.createdTimestamp).toISOString().replace('T', ' ').slice(0, 19);
 		const attachments = [...m.attachments.values()].map((a) => ` [attachment: ${a.url}]`).join('');
-		const embeds = m.embeds.length ? ` [${m.embeds.length} embed(s)]` : '';
-		return `[${time}] ${m.author.username}: ${m.content}${attachments}${embeds}`;
+		const embeds = m.embeds.map((e) => ` [embed: ${[e.title, e.description].filter(Boolean).join(' - ')}]`).join('');
+		return `[${time} UTC] ${m.author.username}: ${m.cleanContent}${attachments}${embeds}`;
 	});
 	const header = `Ticket #${ticket.number} | opened by ${ticket.userId} | reason: ${ticket.reason}\n${'-'.repeat(60)}\n`;
 	const file = new AttachmentBuilder(Buffer.from(header + lines.join('\n')), { name: `ticket-${ticket.number}.txt` });
