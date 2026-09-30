@@ -25,4 +25,11 @@ for (const event of loadDir('events')) {
 
 process.on('unhandledRejection', (err) => console.error('[unhandled]', err));
 
-client.login(process.env.DISCORD_TOKEN);
+client.login(process.env.DISCORD_TOKEN).catch((err) => {
+	if (err.message.includes('disallowed intents')) {
+		console.error('Discord rejected the intents. In the Developer Portal -> Bot, turn on "Server Members Intent" and "Message Content Intent", click Save Changes, then run npm start again.');
+	} else {
+		console.error('Login failed:', err.message);
+	}
+	process.exit(1);
+});
