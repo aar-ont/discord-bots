@@ -7,7 +7,8 @@
     "start": "node --env-file=.env src/index.js",
     "dev": "node --env-file=.env --watch src/index.js",
     "deploy": "node --env-file=.env src/deploy-commands.js",
-    "check": "node src/check.js"
+    "check": "node src/check.js",
+    "setup-demo": "node --env-file=.env src/setup-demo.js"
   },
   "engines": {
     "node": ">=20.6"
