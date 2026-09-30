@@ -11,7 +11,7 @@ Hi! I build custom Discord bots: tickets, moderation, economy/leveling, giveaway
 🎫 Ticket/Mod bot demo: <link>
 💰 Economy/Leveling demo: <link>
 🛠️ Utility bot demo: <link>
-📂 GitHub: <link>
+📂 GitHub: https://github.com/aar-ont/discord-bots
 
 💵 Simple bots from $15 · Custom features $50–150 · Hosting $5–10/mo
 ⚡ Usually delivered in 1–3 days, with a video preview before final payment
@@ -22,7 +22,7 @@ DM me with what you need!
 
 ## Short version (for servers with character limits)
 ```
-[FOR HIRE] discord.js bot dev – tickets, mod, economy, giveaways, custom commands. From $15, hosting available. Demos + GitHub: <link>. DMs open!
+[FOR HIRE] discord.js bot dev – tickets, mod, economy, giveaways, custom commands. From $15, hosting available. Demos + GitHub: https://github.com/aar-ont/discord-bots. DMs open!
 ```
 
 ## Replying to a [HIRING] post

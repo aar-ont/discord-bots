@@ -8,13 +8,13 @@ Use this in r/discordbots, a pinned GitHub README, or a BuiltByBit profile. Swap
 
 Hey! I'm Aaron, a developer who builds custom Discord bots with discord.js. Here are three demo bots I made. Each one is open source and shown in a short clip:
 
-**🎫 Ticket & Moderation bot** – [demo](LINK) · [code](LINK)
+**🎫 Ticket & Moderation bot** – [demo](LINK) · [code](https://github.com/aar-ont/discord-bots/tree/main/01-ticket-mod-bot)
 Private support tickets with a button and a pop-up form, transcripts saved to logs, welcome messages, autoroles, warn/timeout/kick/ban with role-safety checks, and full message and mod logging.
 
-**💰 Economy & Leveling bot** – [demo](LINK) · [code](LINK)
+**💰 Economy & Leveling bot** – [demo](LINK) · [code](https://github.com/aar-ont/discord-bots/tree/main/02-economy-bot)
 XP and levels from chatting, level-up role rewards, coins, daily streaks, /work, a shop that can sell roles, inventories, and leaderboards.
 
-**🛠️ Utility bot** – [demo](LINK) · [code](LINK)
+**🛠️ Utility bot** – [demo](LINK) · [code](https://github.com/aar-ont/discord-bots/tree/main/03-utility-bot)
 Giveaways with an Enter button and rerolls, button polls with live results, reminders, and button reaction roles. It all survives restarts.
 
 **What I can do for you**
