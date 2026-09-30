@@ -1,0 +1,19 @@
+{
+  "name": "utility-bot",
+  "version": "1.0.0",
+  "description": "Discord utility bot: giveaways, polls, reminders and button reaction roles (discord.js v14)",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node --env-file=.env src/index.js",
+    "dev": "node --env-file=.env --watch src/index.js",
+    "deploy": "node --env-file=.env src/deploy-commands.js",
+    "check": "node src/check.js"
+  },
+  "engines": {
+    "node": ">=20.6"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.27.0"
+  }
+}
