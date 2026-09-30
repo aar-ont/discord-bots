@@ -16,7 +16,7 @@ You only need to do this once per bot. Use a **test server** you own and never t
 1. Left sidebar → **Bot**.
 2. Under **Privileged Gateway Intents**, turn on the ones the bot needs:
    - Ticket/mod bot: **Server Members Intent** + **Message Content Intent**
-   - Economy bot: **Server Members Intent** + **Message Content Intent** (XP from chatting)
+   - Economy bot: none required (it counts messages without reading them)
    - Utility bot: none required
    - Click **Save Changes**.
 3. Optional: turn **Public Bot** OFF so only you can invite it while testing.
